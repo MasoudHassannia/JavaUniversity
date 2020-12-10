@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.person.Person;
+
 public interface Table {
 
     void createTable();

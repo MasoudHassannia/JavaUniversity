@@ -1,4 +1,4 @@
-package com.company;
+package com.company.person;
 
 public class Person {
     private int ID;
@@ -6,13 +6,8 @@ public class Person {
     private String lastName;
 
 
-    public Person(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
 
-    public Person(int ID, String firstName, String lastName) {
-        this.ID = ID;
+    public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
