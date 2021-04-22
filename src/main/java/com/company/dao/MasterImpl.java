@@ -65,7 +65,7 @@ public class MasterImpl implements Table {
                      "UPDATE master SET first_name = ?,last_name = ?,  WHERE id_master = ?");) {
             preparedStatement.setString(1, person.getFirstName());
             preparedStatement.setString(2, person.getLastName());
-            preparedStatement.setLong(3, id);
+            preparedStatement.setInt(3, id);
             preparedStatement.executeUpdate();
             System.out.println("Updated!");
         } catch (SQLException sqlException) {

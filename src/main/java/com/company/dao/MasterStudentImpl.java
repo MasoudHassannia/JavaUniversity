@@ -30,7 +30,7 @@ public class MasterStudentImpl {
              PreparedStatement preparedStatement = connection.prepareStatement(
                      "INSERT INTO master_student (master_ID,student_ID) VALUES(?,?)");) {
             preparedStatement.setInt(1, masterStudent.getMasterID());
-            preparedStatement.setInt(1, masterStudent.getStudentID());
+            preparedStatement.setInt(2, masterStudent.getStudentID());
             preparedStatement.executeUpdate();
             System.out.println("New MasterStudent Added!");
 

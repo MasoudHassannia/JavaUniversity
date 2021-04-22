@@ -64,7 +64,7 @@ public class StudentImpl implements Table {
                      "UPDATE student SET first_name = ?,last_name = ?,  WHERE id_student = ?");) {
             preparedStatement.setString(1, person.getFirstName());
             preparedStatement.setString(2, person.getLastName());
-            preparedStatement.setLong(3, id);
+            preparedStatement.setInt(3, id);
             preparedStatement.executeUpdate();
             System.out.println("Updated!");
         } catch (SQLException sqlException) {

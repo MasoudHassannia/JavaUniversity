@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.dao.MasterImpl;
+import com.company.dao.MasterStudentImpl;
 import com.company.dao.StudentImpl;
 import com.company.person.Master;
 import com.company.person.Person;
@@ -13,13 +14,13 @@ public class Main {
         StudentImpl studentImpl = new StudentImpl();
         MasterImpl masterImpl = new MasterImpl();
 
-        studentImpl.insertRecord(new Person("mahdi","ahmadi"));
-        masterImpl.insertRecord(new Master("Behnam","salili"));
 
-        studentImpl.updateRecord(new Person("masoud","hassannia"),2);
+        studentImpl.deleteRecord(5);
 
 
 
+//        MasterStudentImpl masterStudent = new MasterStudentImpl();
+//        masterStudent.insertRecord(new MasterStudent(3,5));
 
 
 

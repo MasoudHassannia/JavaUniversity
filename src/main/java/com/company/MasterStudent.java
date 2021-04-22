@@ -5,8 +5,8 @@ public class MasterStudent {
     private int masterID;
     private int studentID;
 
-    public MasterStudent(int ID, int masterID, int studentID) {
-        this.ID = ID;
+    public MasterStudent( int masterID, int studentID) {
+
         this.masterID = masterID;
         this.studentID = studentID;
     }
